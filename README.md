@@ -3,6 +3,7 @@
 This site is uses: 
 - [Create React App](https://github.com/facebook/create-react-app).
 - [Material UI](https://material-ui.com).
+- [react-tsparticles](https://github.com/matteobruni/tsparticles/tree/main/components/react)
 
 ## Available Scripts
 
