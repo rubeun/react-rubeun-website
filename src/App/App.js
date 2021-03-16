@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
     textAlign: 'center',
-    minHeight: 300,
   },
 
  /** Mobile */
@@ -42,6 +41,16 @@ const useStyles = makeStyles((theme) => ({
   mainContent: {
     marginLeft: theme.spacing(4),
     marginRight: theme.spacing(4),
+    '& h1': {
+      fontSize: theme.typography.h3.fontSize,
+      letterSpacing: theme.typography.h3.letterSpacing,
+      lineHeight: theme.typography.h3.lineHeight,
+    },
+    '& h4': {
+      fontSize: theme.typography.h5.fontSize,
+      letterSpacing: theme.typography.h5.letterSpacing,
+      lineHeight: theme.typography.h5.lineHeight,
+    }
   },
  },
 
