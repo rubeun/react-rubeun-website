@@ -1,13 +1,17 @@
 import Particles from "react-tsparticles";
 import { makeStyles } from '@material-ui/core/styles';
 
+/**
+ * ParticleBackground uses react-tsparticles (https://github.com/matteobruni/tsparticles/tree/main/components/react)
+ * 
+ */
 
 const useStyles = makeStyles((theme) => ({
   particles: {
     position: 'fixed',
     width: '100%',
     height: '100%',
-    zIndex: -1,
+    zIndex: 0,
   },
 }));
 

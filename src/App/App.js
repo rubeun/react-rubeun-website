@@ -20,9 +20,13 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.main,
   },
   mainContent: {
+    marginTop: theme.spacing(4),
     marginLeft: theme.spacing(12),
     marginRight: theme.spacing(12),
-    zIndex: 1,
+    zIndex: -1,
+    '& .MuiGrid-item': {
+      zIndex: 0,
+    }
   },
   paper: {
     paddingTop: theme.spacing(4),
@@ -32,6 +36,15 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     minHeight: 300,
   },
+
+ /** Mobile */
+ [theme.breakpoints.down('sm')]: {
+  mainContent: {
+    marginLeft: theme.spacing(4),
+    marginRight: theme.spacing(4),
+  },
+ },
+
 }));
 
 const App = () => {
@@ -46,7 +59,7 @@ const App = () => {
               <Typography variant="h1">Rubeun's Website</Typography>        
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <Paper className={classes.paper}>
               <Typography variant="h4">Left Content</Typography>
               <Typography variant="body1">
@@ -54,7 +67,7 @@ const App = () => {
               </Typography>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <Paper className={classes.paper}>
               <Typography variant="h4">Right Content</Typography>
               <Typography variant="body1">
