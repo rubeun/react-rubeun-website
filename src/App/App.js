@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ParticleBackground from '../components/ParticleBackground';
+import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 const useStyles = makeStyles((theme) => ({
   '@global': {
@@ -58,9 +61,21 @@ const useStyles = makeStyles((theme) => ({
 
 const App = () => {
   const classes = useStyles();
+  const particleOptions = require('../data/particle-options.json');
+  const [particle, setParticle] = useState("purpleBubbles");
+  
+  // 
+  const toggleBackgroundParticles = () => {
+    if (particle === "purpleBubbles") {
+      setParticle("geometricShapes");
+    } else {
+      setParticle("purpleBubbles");
+    }
+  }
+
   return (
     <div className={classes.root}>
-      <ParticleBackground />
+      <ParticleBackground particleOptions={particleOptions[particle]} />
       <div className={classes.mainContent}>
         <Grid container spacing={4}>
           <Grid item xs={12}>
@@ -82,6 +97,21 @@ const App = () => {
               <Typography variant="body1">
                 Nog nglui gnaiih uaaah uh'e ilyaa stell'bsna throdor chtenff nilgh'riagl k'yarnak shugg, ah cch' goka h'bug nog ron R'lyeh n'gha hai R'lyeh, nw ebunma y-lloig kadishtu cgrah'n ch' clloig gotha f'ilyaa naR'lyeh. Ph'llll chupadgh shugg stell'bsna zhro naflshogg ron 'ai geb n'gha, Cthulhu vulgtm ee hai Nyarlathotep vulgtm y-Azathoth throd, ee y-uaaah gnaiihoth ftaghu n'ghft zhro nnnwgah'n gotha. Shub-Niggurath wgah'n h'Cthulhu naflsyha'h nglui 'fhalma yaog ron n'ghanyth uln, grah'n athg 'fhalma geb gof'nn y-hrii lw'nafhagl naflshogg shagg, tharanak li'hee stell'bsna n'ghft gotha uh'e Chaugnar Faugn h'nilgh'ri. Nnnchtenff ph'Hastur lw'nafh Dagon h'chtenff h'mg Yoggothyar n'ghft ph'gotha Cthulhu shogg, hlirgh ee mg lloig phlegeth naftaghu shagg Tsathoggua s'uhn ph'Dagon, nagotha nog nafllw'nafh uaaah s'uhn y-phlegeth ilyaaoth uln athg.
               </Typography>
+            </Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <Paper className={classes.paper}>
+              <Typography variant="h6">Background Animations</Typography>
+              <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+                <Button 
+                  disabled={particle === "purpleBubbles"}
+                  onClick={toggleBackgroundParticles}
+                >Purple Bubbles</Button>
+                <Button 
+                  disabled={particle === "geometricShapes"}
+                  onClick={toggleBackgroundParticles}
+                >Geometric Shapes</Button>
+              </ButtonGroup>
             </Paper>
           </Grid>
         </Grid>
