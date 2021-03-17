@@ -101,6 +101,7 @@ const App = () => {
           </Grid>
           <Grid item xs={12}>
             <Paper className={classes.paper}>
+              <Typography variant="h6">Background Animations</Typography>
               <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
                 <Button 
                   disabled={particle === "purpleBubbles"}
