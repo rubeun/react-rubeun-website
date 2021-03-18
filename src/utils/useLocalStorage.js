@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Window } from 'src/globals';
 
 /**
  * useLocalStorage:
@@ -17,7 +16,7 @@ const useLocalStorage = (key, initialValue) => {
   const [storedValue, setStoredValue] = useState(() => {
     try {
       // Get from local storage by key
-      const item = Window.localStorage && Window.localStorage.getItem(key);
+      const item = window.localStorage && window.localStorage.getItem(key);
       // Parse stored json or if none return initialValue
       return item ? JSON.parse(item) : initialValue;
     } catch (error) {
@@ -35,7 +34,7 @@ const useLocalStorage = (key, initialValue) => {
       // Save state
       setStoredValue(valueToStore);
       // Save to local storage
-      Window.localStorage && Window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      window.localStorage && window.localStorage.setItem(key, JSON.stringify(valueToStore));
     } catch (error) {
       // A more advanced implementation would handle the error case
       console.log(error);

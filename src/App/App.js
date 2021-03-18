@@ -6,6 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ParticleBackground from '../components/ParticleBackground';
 import useInterval from '../utils/useInterval';
+import useLocalStorage from '../utils/useLocalStorage';
 import Slide from '@material-ui/core/Slide';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
@@ -87,7 +88,7 @@ const App = () => {
   const classes = useStyles();
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });  
   const particleOptions = require('../data/particle-options.json');
-  const [particle, setParticle] = useState("purpleBubbles");
+  const [particle, setParticle] = useLocalStorage("particle", "purpleBubbles");
   const [pageSectionSlide, setPageSectionSlide] = useState({
     header: false,
     leftContent: false,
