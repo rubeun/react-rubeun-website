@@ -1,9 +1,13 @@
 # Rubeun.com ReactJS Website 2021
 
-This site is uses: 
+This site uses: 
 - [Create React App](https://github.com/facebook/create-react-app).
 - [Material UI](https://material-ui.com).
 - [react-tsparticles](https://github.com/matteobruni/tsparticles/tree/main/components/react)
+
+## Live Demo
+
+[https://rubeun.github.io/react-rubeun-website](https://rubeun.github.io/react-rubeun-website)
 
 ## Available Scripts
 
@@ -16,6 +20,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `npm run deploy`
+
+Deploys the app to GitHub Pages at [https://rubeun.github.io/react-rubeun-website](https://rubeun.github.io/react-rubeun-website)
 
 ### `npm test`
 

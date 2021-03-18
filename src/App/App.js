@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -31,20 +32,35 @@ const useStyles = makeStyles((theme) => ({
       zIndex: 0,
     }
   },
+  paperBackground: {
+    background: 'url("http://portfolio.rubeun.com/img/Rubeun-Riomaggiore-Pano1a.jpg")',
+    backgroundSize: 'cover',
+    height: 300,
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
+    paddingLeft: theme.spacing(2),
+    paddingRight: theme.spacing(2),
+    opacity: 0.9,
+  },
+  rubeunIcon: {
+    width: 80,
+    borderRadius: '50%',
+  },
   paper: {
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
     textAlign: 'center',
+    opacity: 0.9,
   },
 
  /** Mobile */
  [theme.breakpoints.down('sm')]: {
   mainContent: {
-    marginLeft: theme.spacing(4),
-    marginRight: theme.spacing(4),
-    '& h1': {
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
+    '& h2': {
       fontSize: theme.typography.h3.fontSize,
       letterSpacing: theme.typography.h3.letterSpacing,
       lineHeight: theme.typography.h3.lineHeight,
@@ -55,32 +71,33 @@ const useStyles = makeStyles((theme) => ({
       lineHeight: theme.typography.h5.lineHeight,
     }
   },
+  paperBackground: {
+    background: 'white',
+    height: 'unset',
+    textAlign: 'center',
+  },
+  rubeunIcon: {},
  },
 
 }));
 
 const App = () => {
   const classes = useStyles();
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });  
   const particleOptions = require('../data/particle-options.json');
   const [particle, setParticle] = useState("purpleBubbles");
   
-  // 
-  const toggleBackgroundParticles = () => {
-    if (particle === "purpleBubbles") {
-      setParticle("geometricShapes");
-    } else {
-      setParticle("purpleBubbles");
-    }
-  }
-
   return (
     <div className={classes.root}>
       <ParticleBackground particleOptions={particleOptions[particle]} />
       <div className={classes.mainContent}>
         <Grid container spacing={4}>
           <Grid item xs={12}>
-            <Paper className={classes.paper}>
-              <Typography variant="h1">Rubeun's Website</Typography>        
+            <Paper className={classes.paperBackground}>
+              <Typography variant="h2">Rubeun's Website</Typography>        
+              <Typography variant="h5">Front End Engineer</Typography>        
+              <Typography variant="h5">San Francisco, CA</Typography>        
+              <img src="http://portfolio.rubeun.com/img/favicon-96x96.png" className={classes.rubeunIcon} alt="Icon of Rubeun" />
             </Paper>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -102,15 +119,22 @@ const App = () => {
           <Grid item xs={12}>
             <Paper className={classes.paper}>
               <Typography variant="h6">Background Animations</Typography>
-              <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+              <ButtonGroup orientation={isPortrait ? "vertical" : "horizontal"} variant="contained" color="primary" aria-label="contained primary button group">
                 <Button 
                   disabled={particle === "purpleBubbles"}
-                  onClick={toggleBackgroundParticles}
+                  value="purpleBubbles"
+                  onClick={() => setParticle("purpleBubbles")}
                 >Purple Bubbles</Button>
                 <Button 
                   disabled={particle === "geometricShapes"}
-                  onClick={toggleBackgroundParticles}
+                  value="geometricShapes"
+                  onClick={() => setParticle("geometricShapes")}
                 >Geometric Shapes</Button>
+                <Button 
+                  disabled={particle === "smokeParticles"}
+                  value="smokeParticles"
+                  onClick={() => setParticle("smokeParticles")}
+                >Smoke Effect</Button>
               </ButtonGroup>
             </Paper>
           </Grid>
