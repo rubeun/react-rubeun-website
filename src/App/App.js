@@ -132,6 +132,10 @@ const App = () => {
                   disabled={particle === "snowfallEffect"}
                   onClick={() => setParticle("snowfallEffect")}
                 >Snowfall</Button>
+                <Button 
+                  disabled={particle === "rainfallEffect"}
+                  onClick={() => setParticle("rainfallEffect")}
+                >Rainfall</Button>
               </ButtonGroup>
             </Paper>
           </Grid>
