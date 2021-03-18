@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/react-rubeun-website/static/js/main.cbf1f6da.chunk.js",
-    "main.js.map": "/react-rubeun-website/static/js/main.cbf1f6da.chunk.js.map",
+    "main.js": "/react-rubeun-website/static/js/main.f8fe5624.chunk.js",
+    "main.js.map": "/react-rubeun-website/static/js/main.f8fe5624.chunk.js.map",
     "runtime-main.js": "/react-rubeun-website/static/js/runtime-main.2bc5b230.js",
     "runtime-main.js.map": "/react-rubeun-website/static/js/runtime-main.2bc5b230.js.map",
-    "static/js/2.dcc1bf29.chunk.js": "/react-rubeun-website/static/js/2.dcc1bf29.chunk.js",
-    "static/js/2.dcc1bf29.chunk.js.map": "/react-rubeun-website/static/js/2.dcc1bf29.chunk.js.map",
+    "static/js/2.8234a226.chunk.js": "/react-rubeun-website/static/js/2.8234a226.chunk.js",
+    "static/js/2.8234a226.chunk.js.map": "/react-rubeun-website/static/js/2.8234a226.chunk.js.map",
     "index.html": "/react-rubeun-website/index.html",
-    "static/js/2.dcc1bf29.chunk.js.LICENSE.txt": "/react-rubeun-website/static/js/2.dcc1bf29.chunk.js.LICENSE.txt"
+    "static/js/2.8234a226.chunk.js.LICENSE.txt": "/react-rubeun-website/static/js/2.8234a226.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2bc5b230.js",
-    "static/js/2.dcc1bf29.chunk.js",
-    "static/js/main.cbf1f6da.chunk.js"
+    "static/js/2.8234a226.chunk.js",
+    "static/js/main.f8fe5624.chunk.js"
   ]
 }
