@@ -122,19 +122,20 @@ const App = () => {
               <ButtonGroup orientation={isPortrait ? "vertical" : "horizontal"} variant="contained" color="primary" aria-label="contained primary button group">
                 <Button 
                   disabled={particle === "purpleBubbles"}
-                  value="purpleBubbles"
                   onClick={() => setParticle("purpleBubbles")}
                 >Purple Bubbles</Button>
                 <Button 
                   disabled={particle === "geometricShapes"}
-                  value="geometricShapes"
                   onClick={() => setParticle("geometricShapes")}
                 >Geometric Shapes</Button>
                 <Button 
-                  disabled={particle === "smokeParticles"}
-                  value="smokeParticles"
-                  onClick={() => setParticle("smokeParticles")}
-                >Smoke Effect</Button>
+                  disabled={particle === "snowfallEffect"}
+                  onClick={() => setParticle("snowfallEffect")}
+                >Snowfall</Button>
+                <Button 
+                  disabled={particle === "rainfallEffect"}
+                  onClick={() => setParticle("rainfallEffect")}
+                >Rainfall</Button>
               </ButtonGroup>
             </Paper>
           </Grid>
