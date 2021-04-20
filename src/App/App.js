@@ -166,13 +166,13 @@ const App = () => {
                     onClick={() => setParticle("geometricShapes")}
                   >Geometric Shapes</Button>
                   <Button 
-                    disabled={particle === "snowfallEffect"}
-                    onClick={() => setParticle("snowfallEffect")}
-                  >Snowfall</Button>
-                  <Button 
                     disabled={particle === "rainfallEffect"}
                     onClick={() => setParticle("rainfallEffect")}
                   >Rainfall</Button>
+                  <Button 
+                    disabled={particle === "flameEffect"}
+                    onClick={() => setParticle("flameEffect")}
+                  >Flames</Button>
                 </ButtonGroup>
               </Paper>
             </Slide>
