@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-rubeun-website/static/js/main.be70da2b.chunk.js",
-    "main.js.map": "/react-rubeun-website/static/js/main.be70da2b.chunk.js.map",
+    "main.js": "/react-rubeun-website/static/js/main.af8c7dcc.chunk.js",
+    "main.js.map": "/react-rubeun-website/static/js/main.af8c7dcc.chunk.js.map",
     "runtime-main.js": "/react-rubeun-website/static/js/runtime-main.2bc5b230.js",
     "runtime-main.js.map": "/react-rubeun-website/static/js/runtime-main.2bc5b230.js.map",
     "static/js/2.c693884e.chunk.js": "/react-rubeun-website/static/js/2.c693884e.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.2bc5b230.js",
     "static/js/2.c693884e.chunk.js",
-    "static/js/main.be70da2b.chunk.js"
+    "static/js/main.af8c7dcc.chunk.js"
   ]
 }
