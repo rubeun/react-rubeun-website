@@ -35,6 +35,10 @@ const useStyles = makeStyles((theme) => ({
       zIndex: 0,
     }
   },
+  contentContainer: {
+    display: 'flex',
+    flexGrow: 1,
+  },
   paperBackground: {
     background: 'url("http://portfolio.rubeun.com/img/Rubeun-Riomaggiore-Pano1a.jpg")',
     backgroundSize: 'cover',
@@ -95,7 +99,7 @@ const App = () => {
     rightContent: false,
     footer: false,
   });
-
+    
   // Delay slide in animation by 1, 2 & 3 seconds
   useInterval(() => {
     setPageSectionSlide(prev => ({
@@ -132,7 +136,9 @@ const App = () => {
               </Paper>
             </Slide>
           </Grid>
-          <Grid item xs={12} sm={6}>
+        </Grid>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={6} className={classes.contentContainer}>
             <Slide direction="up" in={pageSectionSlide.leftContent} mountOnEnter unmountOnExit>
               <Paper className={classes.paper}>
                 <Typography variant="h4">Left Content</Typography>
@@ -142,7 +148,7 @@ const App = () => {
               </Paper>
             </Slide>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} className={classes.contentContainer}>
             <Slide direction="up" in={pageSectionSlide.rightContent} mountOnEnter unmountOnExit>
               <Paper className={classes.paper}>
                 <Typography variant="h4">Right Content</Typography>
@@ -152,6 +158,8 @@ const App = () => {
               </Paper>
             </Slide>
           </Grid>
+        </Grid>
+        <Grid container spacing={4}>
           <Grid item xs={12}>
             <Slide direction="up" in={pageSectionSlide.footer} mountOnEnter unmountOnExit>
               <Paper className={classes.paper}>
@@ -179,8 +187,6 @@ const App = () => {
           </Grid>
         </Grid>
       </div>
-      {/* <div className={classes.body}>
-      </div> */}
     </div>
   );
 }
