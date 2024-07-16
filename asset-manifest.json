@@ -1,17 +1,11 @@
 {
   "files": {
-    "main.js": "/react-rubeun-website/static/js/main.af8c7dcc.chunk.js",
-    "main.js.map": "/react-rubeun-website/static/js/main.af8c7dcc.chunk.js.map",
-    "runtime-main.js": "/react-rubeun-website/static/js/runtime-main.2bc5b230.js",
-    "runtime-main.js.map": "/react-rubeun-website/static/js/runtime-main.2bc5b230.js.map",
-    "static/js/2.c693884e.chunk.js": "/react-rubeun-website/static/js/2.c693884e.chunk.js",
-    "static/js/2.c693884e.chunk.js.map": "/react-rubeun-website/static/js/2.c693884e.chunk.js.map",
+    "main.js": "/react-rubeun-website/static/js/main.3e6d2dd7.js",
+    "static/media/new-earnup-site1.mp4": "/react-rubeun-website/static/media/new-earnup-site1.e411dc48ed8fc0d066de.mp4",
     "index.html": "/react-rubeun-website/index.html",
-    "static/js/2.c693884e.chunk.js.LICENSE.txt": "/react-rubeun-website/static/js/2.c693884e.chunk.js.LICENSE.txt"
+    "main.3e6d2dd7.js.map": "/react-rubeun-website/static/js/main.3e6d2dd7.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.2bc5b230.js",
-    "static/js/2.c693884e.chunk.js",
-    "static/js/main.af8c7dcc.chunk.js"
+    "static/js/main.3e6d2dd7.js"
   ]
 }
