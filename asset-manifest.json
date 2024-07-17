@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.js": "/react-rubeun-website/static/js/main.3e6d2dd7.js",
+    "main.js": "/react-rubeun-website/static/js/main.d147a091.js",
     "static/media/new-earnup-site1.mp4": "/react-rubeun-website/static/media/new-earnup-site1.e411dc48ed8fc0d066de.mp4",
+    "static/media/SanFrancisco-Aerial-Mission1-cropped.jpg": "/react-rubeun-website/static/media/SanFrancisco-Aerial-Mission1-cropped.371bf2681cfb235cfc3b.jpg",
+    "static/media/SanFrancisco-Aerial-Mission1a-square.jpg": "/react-rubeun-website/static/media/SanFrancisco-Aerial-Mission1a-square.bf6c0b82a0101f282a1f.jpg",
     "index.html": "/react-rubeun-website/index.html",
-    "main.3e6d2dd7.js.map": "/react-rubeun-website/static/js/main.3e6d2dd7.js.map"
+    "main.d147a091.js.map": "/react-rubeun-website/static/js/main.d147a091.js.map"
   },
   "entrypoints": [
-    "static/js/main.3e6d2dd7.js"
+    "static/js/main.d147a091.js"
   ]
 }
