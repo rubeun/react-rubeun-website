@@ -11,6 +11,8 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LeftComponent from '../components/LeftComponent';
 import RightComponent from '../components/RightComponent';
+import backgroundImage from './media/SanFrancisco-Aerial-Mission1-cropped.jpg';
+import backgroundImageSquare from './media/SanFrancisco-Aerial-Mission1a-square.jpg';
 
 const useStyles = makeStyles((theme) => ({
   '@global': {
@@ -39,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   contentContainer: {
   },
   paperBackground: {
-    background: 'url("http://portfolio.rubeun.com/img/Rubeun-Riomaggiore-Pano1a.jpg")',
+    background: `url("${backgroundImage}")`,
     backgroundSize: 'cover',
     height: 300,
     paddingTop: theme.spacing(4),
@@ -59,26 +61,31 @@ const useStyles = makeStyles((theme) => ({
 
  /** Mobile */
  [theme.breakpoints.down('sm')]: {
-  mainContent: {
-    marginLeft: theme.spacing(2),
-    marginRight: theme.spacing(2),
-    '& h2': {
-      fontSize: theme.typography.h3.fontSize,
-      letterSpacing: theme.typography.h3.letterSpacing,
-      lineHeight: theme.typography.h3.lineHeight,
+    mainContent: {
+      marginLeft: theme.spacing(2),
+      marginRight: theme.spacing(2),
+      '& h1': {
+        fontSize: theme.typography.h3.fontSize,
+        letterSpacing: theme.typography.h3.letterSpacing,
+        lineHeight: theme.typography.h3.lineHeight,
+      },
+      '& h5': {
+        fontSize: theme.typography.h6.fontSize,
+        letterSpacing: theme.typography.h6.letterSpacing,
+        lineHeight: theme.typography.h6.lineHeight,
+      },
+      '& body1': {
+        fontSize: theme.typography.body2.fontSize,
+        letterSpacing: theme.typography.body2.letterSpacing,
+        lineHeight: theme.typography.body2.lineHeight,
+      }
     },
-    '& h4': {
-      fontSize: theme.typography.h5.fontSize,
-      letterSpacing: theme.typography.h5.letterSpacing,
-      lineHeight: theme.typography.h5.lineHeight,
-    }
-  },
-  paperBackground: {
-    background: 'white',
-    height: 'unset',
-    textAlign: 'center',
-  },
-  rubeunIcon: {},
+    paperBackground: {
+      background: `url("${backgroundImageSquare}")`,
+      height: 200,
+      textAlign: 'center',
+    },
+    rubeunIcon: {},
  },
 
 }));
