@@ -3,9 +3,20 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
+  headerText: {
+    color: theme.palette.primary.contrastText,
+    paddingLeft: 16,
+  },
   rubeunIcon: {
     width: 80,
     borderRadius: '50%',
+    paddingLeft: 16,
+    paddingTop: 16,
+  },
+
+  /** Mobile */
+  [theme.breakpoints.down('sm')]: {
+
   },
 }));
 
@@ -13,9 +24,9 @@ const Header = () => {
   const classes = useStyles();
   return (
     <>
-      <Typography variant="h1">Rubeun's Website</Typography>        
-      <Typography variant="h5">Front End Engineer</Typography>        
-      <Typography variant="h5">San Francisco, CA</Typography>        
+      <Typography variant="h1" className={classes.headerText}>Rubeun's Website</Typography>        
+      <Typography variant="h5" className={classes.headerText}>Front End Engineer</Typography>        
+      <Typography variant="h5" className={classes.headerText}>San Francisco, CA</Typography>        
       <img src="http://portfolio.rubeun.com/img/favicon-96x96.png" className={classes.rubeunIcon} alt="Icon of Rubeun" />    
     </>
   );
