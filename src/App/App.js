@@ -65,9 +65,9 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(2),
       marginRight: theme.spacing(2),
       '& h1': {
-        fontSize: theme.typography.h3.fontSize,
-        letterSpacing: theme.typography.h3.letterSpacing,
-        lineHeight: theme.typography.h3.lineHeight,
+        fontSize: theme.typography.h4.fontSize,
+        letterSpacing: theme.typography.h4.letterSpacing,
+        lineHeight: theme.typography.h4.lineHeight,
       },
       '& h5': {
         fontSize: theme.typography.h6.fontSize,
