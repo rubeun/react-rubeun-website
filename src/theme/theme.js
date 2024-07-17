@@ -75,7 +75,7 @@ const theme = {
       fontWeight: 900,
     },
     button: {
-      fontSize: '14px',
+      fontSize: '10px',
       fontWeight: 900,
       letterSpacing: '1.25px',
       lineHeight: '24px',
