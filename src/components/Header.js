@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
   headerText: {
     color: theme.palette.primary.contrastText,
     paddingLeft: 16,
+    textShadow: '#8fd8c5 1px 0 10px',
   },
   rubeunIcon: {
     width: 80,
