@@ -115,6 +115,12 @@ const theme = {
       grey: '#F4F4F4',
     },
   },
+  link: {
+    color: '#5555ff',
+    colorHover: '#ff11ff',
+    colorActive: '#aaaaff',
+    textDecoration: 'none',
+  },
   image: {
     borderRadius: '6px',
     boxShadow: '0 10px 10px rgba(100, 100, 100, 0.2)',
