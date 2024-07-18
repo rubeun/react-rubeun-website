@@ -30,6 +30,13 @@ const RightComponent = () => {
             I was the primary front-end developer that planned and coded the entire site working closely with the Design and Marketing teams.</Typography>
         </ListItem>
         <ListItem>
+          <Typography variant='body1'>
+            Examples of the code I wrote for the homepage:{' '}
+            <a href='https://gist.github.com/rubeun/eb2fdb4c0f7d31a10d89311f0d65cc13' target='_blank' rel='noreferrer'>HeroSection.js</a>{' '}
+            <a href='https://gist.github.com/rubeun/0e6f167513f6f929c42d321ea5cf66a7' target='_blank' rel='noreferrer'>AnimatedPhone.js</a>
+          </Typography>
+        </ListItem>
+        <ListItem>
           <VideoPlayer videoFile={earnupVid} />
         </ListItem>
       </List>
