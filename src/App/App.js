@@ -28,6 +28,16 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '100%',
     backgroundColor: theme.palette.background.default,
     color: theme.palette.primary.main,
+    '& a': {
+      color: theme.link.color,
+      textDecoration: theme.link.textDecoration,
+      '&:hover': {
+        color: theme.link.colorHover,
+      },
+      '&:active': {
+        color: theme.link.colorActive,
+      }  
+    },
   },
   mainContent: {
     marginTop: theme.spacing(4),
@@ -94,7 +104,7 @@ const App = () => {
   const classes = useStyles();
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });  
   const particleOptions = require('../data/particle-options.json');
-  const [particle, setParticle] = useLocalStorage("particle", "purpleBubbles");
+  const [particle, setParticle] = useLocalStorage("particle", "geometricShapes");
   const [pageSectionSlide, setPageSectionSlide] = useState({
     header: false,
     leftContent: false,
