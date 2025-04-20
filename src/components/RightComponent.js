@@ -3,6 +3,8 @@ import { List, ListItem } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import VideoPlayer from './VideoPlayer';
 import earnupVid from '../App/media/new-earnup-site1.mp4';
+import wordleVid from '../App/media/rubeun-wordle-demo1.mp4';
+import eliteVid from '../App/media/rubeun-elite-assistant-demo1.mp4';
 
 const useStyles = makeStyles((theme) => ({
   rightComponent: {
@@ -39,6 +41,25 @@ const RightComponent = () => {
         <ListItem>
           <VideoPlayer videoFile={earnupVid} />
         </ListItem>
+
+        <hr />
+
+        <ListItem>
+          <Typography variant='h5'>Side Projects</Typography>        
+        </ListItem>
+        <ListItem>
+          <Typography variant='body1'>Wordle Game &mdash; <a href='https://rubeun.github.io/wordle/' target='_blank' rel='noreferrer'>Play Here</a></Typography>
+        </ListItem>
+        <ListItem>
+          <VideoPlayer videoFile={wordleVid} />
+        </ListItem>
+        <ListItem>
+          <Typography variant='body1'>Elite Assistant &mdash; <a href='https://rubeun.github.io/elite-assistant/' target='_blank' rel='noreferrer'>Use Here</a></Typography>
+        </ListItem>
+        <ListItem>
+          <VideoPlayer videoFile={eliteVid} />
+        </ListItem>
+
       </List>
     </div>
   )
