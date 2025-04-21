@@ -45,16 +45,25 @@ const RightComponent = () => {
         <hr />
 
         <ListItem>
-          <Typography variant='h5'>Side Projects</Typography>        
+          <Typography variant='h5'>Personal Projects</Typography>        
         </ListItem>
         <ListItem>
-          <Typography variant='body1'>Wordle Game &mdash; <a href='https://rubeun.github.io/wordle/' target='_blank' rel='noreferrer'>Play Here</a></Typography>
+          <Typography variant='body1'>
+            <strong>Wordle Game</strong> &mdash; I recreated NYT's Wordle Game minus the one annoying limitation, only one word per 24 hours.
+            Built with React & TypeScript.{'  '} 
+            <a href='https://rubeun.github.io/wordle/' target='_blank' rel='noreferrer'>Play Here</a>
+          </Typography>
         </ListItem>
         <ListItem>
           <VideoPlayer videoFile={wordleVid} />
         </ListItem>
         <ListItem>
-          <Typography variant='body1'>Elite Assistant &mdash; <a href='https://rubeun.github.io/elite-assistant/' target='_blank' rel='noreferrer'>Use Here</a></Typography>
+          <Typography variant='body1'>
+            <strong>Elite Assistant</strong> &mdash; I built this colonisation utility app to help me build colonies in the game{' '} 
+            <a href='https://www.elitedangerous.com/en-US' target='_blank' rel='noreferrer'>Elite Dangerous</a>.{' '}
+            It keeps track of needed resources to build any particular facility as well as what resources I already had in storage. Built with React & TypeScript.{'  '}
+            <a href='https://rubeun.github.io/elite-assistant/' target='_blank' rel='noreferrer'>Use Here</a>
+          </Typography>
         </ListItem>
         <ListItem>
           <VideoPlayer videoFile={eliteVid} />
