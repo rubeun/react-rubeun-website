@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/react-rubeun-website/static/js/main.7e84b98f.js",
+    "main.js": "/react-rubeun-website/static/js/main.0cfce4f9.js",
     "static/media/new-earnup-site1.mp4": "/react-rubeun-website/static/media/new-earnup-site1.e411dc48ed8fc0d066de.mp4",
     "static/media/rubeun-elite-assistant-demo1.mp4": "/react-rubeun-website/static/media/rubeun-elite-assistant-demo1.88adb644dcee6ed0ca92.mp4",
     "static/media/rubeun-wordle-demo1.mp4": "/react-rubeun-website/static/media/rubeun-wordle-demo1.177e132c87496c7dc4aa.mp4",
     "static/media/SanFrancisco-Aerial-Mission1-cropped.jpg": "/react-rubeun-website/static/media/SanFrancisco-Aerial-Mission1-cropped.371bf2681cfb235cfc3b.jpg",
     "static/media/SanFrancisco-Aerial-Mission1a-square.jpg": "/react-rubeun-website/static/media/SanFrancisco-Aerial-Mission1a-square.bf6c0b82a0101f282a1f.jpg",
     "index.html": "/react-rubeun-website/index.html",
-    "main.7e84b98f.js.map": "/react-rubeun-website/static/js/main.7e84b98f.js.map"
+    "main.0cfce4f9.js.map": "/react-rubeun-website/static/js/main.0cfce4f9.js.map"
   },
   "entrypoints": [
-    "static/js/main.7e84b98f.js"
+    "static/js/main.0cfce4f9.js"
   ]
 }
