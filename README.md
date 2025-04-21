@@ -1,13 +1,16 @@
-# Rubeun.com ReactJS Website 2021
+# Rubeun's React Portfolio
+My Online Portfolio highlighting work experience, skills, education and a handful of past work. 
+Built with React & Material UI.
 
 This site uses: 
 - [Create React App](https://github.com/facebook/create-react-app).
 - [Material UI](https://material-ui.com).
 - [react-tsparticles](https://github.com/matteobruni/tsparticles/tree/main/components/react)
 
-## Live Demo
+## Live Deployment
 
-[https://rubeun.github.io/react-rubeun-website](https://rubeun.github.io/react-rubeun-website)
+[https://portfolio.rubeun.com](https://portfolio.rubeun.com)
+
 
 ## Available Scripts
 
