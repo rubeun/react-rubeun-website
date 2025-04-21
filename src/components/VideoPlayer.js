@@ -48,7 +48,7 @@ const VideoPlayer = ({ videoFile }) => {
         className={classes.videoPlayer}
         src={videoFile}
         ref={videoElement}
-        controls
+        controls={false}
         autoPlay
         muted
         loop
